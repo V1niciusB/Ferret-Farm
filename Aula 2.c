@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-//relógio
+//clock-alarm
 int main(){
 int n, segundo=0, minuto=0, hora=0, aH, aM;
 char p;
@@ -26,7 +26,7 @@ segundo++;
 sleep(1);// 1 segundo
 }
 if(hora==aH && minuto==aM){
-   printf("Acorde!\n");
+   printf("\nAcorde!");
    break;
 }
 }
