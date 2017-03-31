@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<windows.h>
-//relógio
+//relÃ³gio
 int main(){
-int n, segundo=0, minutos=0, hora=0;
+int n, segundo=0, minuto=0, hora=0;
 n=1;
 while(n >0){
 if(segundo == 60){
     segundo = 0;
-    minutos++;
+    minuto++;
 }
-if(minutos == 60){
-    minutos = 0;
+if(minuto == 60){
+    minuto = 0;
     hora++;
 }
 if(hora==24){
     hora = 0;
 }
-printf("\r  Hora: %d : %d : %d ", hora, minutos, segundo);
+printf("\r  Hora: %d : %d : %d ", hora, minuto, segundo);
 segundo++;
 sleep(1);// 1 segundo
 }
