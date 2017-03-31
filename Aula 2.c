@@ -26,7 +26,7 @@ segundo++;
 sleep(1);// 1 segundo
 }
 if(hora==aH && minuto==aM){
-   printf("\nAcorde!");
+   printf("\n Acorde!");
    break;
 }
 }
