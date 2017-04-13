@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int x,a;
+    printf("\tDigite seu número:");
+    scanf("%d", &x);
+    a=x%2;
+    if(a==0){
+        printf("Seu número é par!");
+        }
+        else
+        printf("Seu número é impar!");
+    return 0;
+
+}
