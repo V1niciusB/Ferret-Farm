@@ -1,35 +1,19 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 int main()
-
 {
-
     int x,y,z;
-
     printf("\tDigite 3 numeros:");
-
     scanf("%d%d%d",&x, &y, &z);
-
     if(x>=y && x>z){
-
         printf("\n\n%d é o maior número", x);
-
     }
-
     if(y>x && y>=z){
-
         printf("\n\n%d é o maior número", y);
-
     }
-
     if(z>=x && z>y){
-
         printf("\n\n%d é o maior número", z);
-
     }
-
 
     return 0;
 
