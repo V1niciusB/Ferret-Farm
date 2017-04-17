@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() {
+    float peso, altura, idade, tmb;
+    char sexo;
+    printf("Este programa busca determinar a sua Taxa Metabolica Basal.\n\nPara iniciar, seu sexo biologico.\nDigite 'm' para Masculino e 'f' para Feminino.:");
+    scanf("%c", &sexo);
+    printf("\nAgora digite o seu peso em kg:");
+    scanf("%f", &peso);
+    printf("\nAgora digite a sua altura em cm:");
+    scanf("%f", &altura);
+    printf("\nPara finalizar, digite sua idade em anos:");
+    scanf("%f", &idade);
+    if(sexo=='m'){
+        tmb=((10*peso)+(6.25*altura)-(5*idade)+5);
+        printf("%f",tmb);
+    }
+    if(sexo=='f'){
+        tmb=((10*peso)+(6.25*altura)-(5*idade)-161);
+        printf("%f",tmb);
+    }
+    return 0;
+}
