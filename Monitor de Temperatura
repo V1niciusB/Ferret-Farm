@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+int main() {
+    float temp;
+    char unidade;
+    scanf("%f %c", &temp, &unidade);
+    if(unidade=='c'){
+    printf("%f Celsius", temp);
+        if(temp < 35){
+            printf("\nHipotermia");
+        }
+        if(temp>= 35 && temp<36.5){
+            printf("\nEm risco");
+        }
+        if(temp>=36.5 && temp<=37.5){
+           printf("\nNormal");
+        }
+        if(temp>37.5 && temp<=40){
+            printf("\nEm risco");
+        }
+        if(temp>40){
+            printf("\nHiperpirexia");
+        }
+        }
+    if(unidade=='f'){
+    printf("%f Fahrenheit", temp);
+         if(temp < 95){
+            printf("\nHipotermia");
+        }
+        if(temp>= 95 && temp<97.7){
+            printf("\nEm risco");
+        }
+        if(temp>=97.7 && temp<=99.5){
+           printf("\nNormal");
+        }
+        if(temp>99.5 && temp<=104){
+            printf("\nEm risco");
+        }
+        if(temp>104){
+            printf("\nHiperpirexia");
+        }
+    }
+    return 0;
+}
