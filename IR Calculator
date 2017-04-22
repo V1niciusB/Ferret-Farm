@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float money,liq, sub;
+   int dep;
+   printf("Digite a sua renda deste mes:");
+   scanf("%f", &liq);
+   printf("Digite o numero de dependentes que possui:");
+   scanf("%d", &dep);
+   money=(liq-(dep*189.59));//Renda - Deduçoes
+   if(money <= 1903.98){
+    printf("Isento");
+   }
+   if(money > 1903.98 && money <= 2826.65){
+        sub=((money-1903.98)*0.075);
+        if(sub<=0){
+            printf("Isento");
+        }
+        else
+            printf("%.2f", sub);
+   }
+   if(money > 2826.65 && money <= 3751.05){
+        sub=(((money-2826.65)*0.15)+69.2);
+        if(sub<=0){
+            printf("Isento");
+        }
+        else
+            printf("%.2f", sub);
+   }
+   if(money > 3751.05 && money <= 4664.68){
+        sub=(((money-3751.05)*0.225)+207.86);
+        if(sub<=0){
+            printf("Isento");
+        }
+        else
+            printf("%.2f", sub);
+   }
+   if(money > 4664.68){
+        sub=(((money-4664.68)*0.275)+413.43);
+        if(sub<=0){
+            printf("Isento");
+        }
+        else
+            printf("%.2f", sub);
+   }
+    return 0;
+}
