@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Este programa calcula o imposto de renda a ser pago baseado em sua renda mensal e numero de dependentes
+
 int main()
 {
    float money,liq, sub;
